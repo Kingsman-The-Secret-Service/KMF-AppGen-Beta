@@ -1,6 +1,3 @@
-<!-- Start of Content -->
-<div class="row">
-<div class="well well-transparent p-justify" >
 <h2><u>Introduction</u></h2>
 <p>KMF-AppGen is a PHP Application which is developed in the motivation to reduce the working % of person who wants to develop a basic CRUD based PHP Application automatically using evergreen packages like PHP ActiveRecords for database orientation, Design-wise through Bootstrap & Server & Client validations through PHP Simple HTML DOM Parser & JQuery Validation.</p>
 <hr/>
@@ -97,23 +94,33 @@
 </ol>
 <hr/>
 
-<h2><u>Developed & Maintained</u></h2>
-<div class="row-fluid">
-<div class="pull-left span2">
-<img src="tmp/kavi.jpg" alt="Author"/>
-</div>
-<div>
-<address>
-<strong>Kaviarasan K K</strong><br>
-India
-</address>
-<a href="https://www.facebook.com/kaviarasankk" class="annoyurl" target="_blank"><i class="icon-facebook-sign icon-2x"></i></a>
-<a href="https://github.com/kaviarasankk" class="annoyurl" target="_blank"><i class="icon-github icon-2x "></i></a>
-<a href="https://www.twitter.com/kaviarasankk" class="annoyurl" target="_blank"><i class="icon-twitter-sign icon-2x"></i></a>
-<a href="mailto:kaviarasankk@gmail.com" class="annoyurl" target="_blank"><i class="icon-envelope icon-2x"></i></a>
-</div>
-</div>
-<hr/>
-</div>
-</div>
-<!-- End of Content -->
+
+##License & Authors
+
+<img class="commit-form-avatar js-avatar" width="60" height="60" src="https://avatars2.githubusercontent.com/u/2240650?s=140" data-user="2240650" alt="Kaviarasan K K"></img>
+
+*Kaviarasan K K* [(kaviarasankk@gmail.com)] (mailto:kaviarasankk@gmail.com)  
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2014 Kaviarasan K K
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
