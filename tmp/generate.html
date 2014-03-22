@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- Start of HTML -->
+<html>
+
+<!-- Start of Head -->
+<head>
+<title>Keep Moving Forward</title>
+
+    <!-- Start of CSS -->
+    <link href="BootStrap/css/bootstrap.css" rel="stylesheet">
+    <link href="BootStrap/css/font-awesome.css" rel="stylesheet">
+    <link href="Jquery/css/flick/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+    <!-- End of CSS -->
+    
+</head>
+<!-- End of Head -->
+
+<!-- Start of Body -->
+<body>
+
+<!-- Start of Container -->
+<div class="container">
+
+    <!-- Start of Header -->
+    <div class="row well well-small well-transparent">        
+        <h3 style="text-transform:capitalize;"><center><i class="icon-spinner icon-spin icon-2x"></i> Keep Moving Forward</center></h3>
+    </div>
+    <!-- End of Header -->
+    
+    <!-- Start of Breadcrumb -->
+    <div class="row">
+        <div class=" btn-group">
+            <a href="index.php" class="btn btn-large span2 btn-info"><i class="icon-home icon-large icon-white"></i> Home</a> 
+            <a class="btn btn-large span3 btn-warning"><i class="icon-wrench icon-large icon-white"></i> Back-End Configuration</a>             
+            <a class="btn btn-large span3 btn-success"><i class="icon-cog icon-large icon-white"></i> Front-End Configuration</a>
+            <a class="btn btn-large span3 btn-primary" disabled><i class="icon-download-alt icon-large icon-white"></i> Demo & Download</a>
+        </div>
+    </div>
+    <hr/>
+    <!-- End of Breadcrumb -->
+    
+    <!-- Start of Content -->
+    <div class="row">
+    
+            <form method="post" action="result.php">
+                <div class="well">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4">Ls_affiliates &raquo; Primary Key</a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span* right" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; int</a></li>
+                    <li><a tabindex="-1">Length &raquo; 11</a></li>
+                    </ul>
+                </div>                
+                </legend>
+                <div>                
+                    <div class="input-prepend input-append">                       
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <div class="span2 uneditable-input">DB Primary Key</div>
+                        <div class="add-on">Validation &nbsp; <i class="icon-caret-right "></i></div>
+                        <div class="span2 uneditable-input">No</div>                        
+                        <div class="add-on"></div>
+                        <input name="TBNAME[]" id="TBNAME" value="ls_affiliates" type="hidden" data-rule-required="false" />
+                    </div>                
+                </div>
+                 </fieldset>
+                 </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Name</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 100</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="name-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="name[inputtype]" id="name" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of name">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="name[length]" id="name-length" value="100" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="name[required]" id="name-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="name-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Companyname</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 200</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="companyname-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="companyname[inputtype]" id="companyname" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of companyname">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="companyname[length]" id="companyname-length" value="200" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="companyname[required]" id="companyname-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="companyname-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Referal_link</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 200</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="referal_link-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="referal_link[inputtype]" id="referal_link" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of referal_link">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="referal_link[length]" id="referal_link-length" value="200" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="referal_link[required]" id="referal_link-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="referal_link-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Email</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 100</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="email-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="email[inputtype]" id="email" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of email">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="email[length]" id="email-length" value="100" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="email[required]" id="email-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="email-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Mobile</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 20</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="mobile-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="mobile[inputtype]" id="mobile" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of mobile">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="mobile[length]" id="mobile-length" value="20" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="mobile[required]" id="mobile-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="mobile-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Address</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 500</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="address-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="address[inputtype]" id="address" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of address">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="address[length]" id="address-length" value="500" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="address[required]" id="address-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="address-custom"></div>
+                </fieldset>
+                </div>
+                
+                <div class="well well-transparent">
+                <fieldset>
+                <legend>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-inverse span4 text-left"><strong>Ls_affiliates &raquo; Panid</strong></a>
+                    <a href="#" class="btn btn-inverse dropdown-toggle span*" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a tabindex="-1">Raw Type &raquo; varchar</a></li>
+                    <li><a tabindex="-1">Length &raquo; 50</a></li>
+                    </ul>
+                </div>
+                </legend>
+                
+                <div id="panid-parent-custom">                
+                    <div class="input-prepend input-append">                    
+                        <div class="add-on">Input Type &nbsp;<i class="icon-caret-right "></i></div>                        
+                        <select name="panid[inputtype]" id="panid" table-group="ls_affiliates" class="inputtype span2" data-rule-required="true" data-msg-required=" Please select input type of panid">
+                        <option value="">-----</option>
+                        <option value="text"selected="selected">Text</option>
+                        <option value="password">Password</option>
+                        <option value="dropdown">Drop Down</option>
+                        <option value="radio">Radio</option>
+                        <option value="checkbox">Checkbox</option>
+                        <option value="file">File</option>
+                        <option value="textarea" >Text Area</option>
+                        <option value="hidden">Hidden</option>
+                        <option value="NA">Not Needed</option>
+                        </select>
+                        
+                        <input name="panid[length]" id="panid-length" value="50" type="hidden" data-rule-required="false" />
+
+                        <div class="add-on">Validation &nbsp;<i class="icon-caret-right "></i></div> 
+                        <select name="panid[required]" id="panid-required" class="span2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                        <div class="add-on"></div>
+                    </div>                    
+                    <span class="help-inline text-error"></span>                
+                </div>
+                
+                <div id="panid-custom"></div>
+                </fieldset>
+                </div>
+                
+            <input name="PROJECT" id="PROJECT" value="late" type="hidden" data-rule-required="false" />
+            <input name="DBTYPE" id="DBTYPE" value="mysql" type="hidden" data-rule-required="false" />
+            <input name="HOST" id="HOST" value="localhost" type="hidden" data-rule-required="false" />
+            <input name="DATABASE" id="DATABASE" value="ripitlateshipment" type="hidden" data-rule-required="false" />
+            <input name="USERNAME" id="USERNAME" value="root" type="hidden" data-rule-required="false" />
+            <input name="PASSWORD" id="PASSWORD" value="ripit" type="hidden" data-rule-required="false" />
+            <input name="CHARSET" id="CHARSET" value="utf8" type="hidden" data-rule-required="false" />
+            
+            <div class="form-actions">
+                <a href="javascript:history.go(-1)" class="pull-left btn btn-medium">
+                     <i class="icon-chevron-left icon-white"></i> Back
+                </a>
+                <button type="submit" name="GENERATE" id="GENERATE" value="GENERATE" class="pull-right btn btn-medium btn-inverse">
+                    Please Generate <i class="icon-chevron-right icon-white"></i>
+                </button>            
+            </div>
+            </form>
+
+    </div>
+    <!-- End of Content -->
+    
+    <!-- Start of Footer -->
+    <div class="row well well-small well-transparent">
+        <center><p style="text-transform:capitalize;">2014 &copy; Keep Moving Forward</p></center>
+    </div>
+    <!-- End of Footer -->
+    
+    <!-- Start of Script -->
+    <script src="Jquery/js/jquery-1.9.1.js"></script>
+    <script src="Jquery/js/jquery-ui-1.10.1.custom.js"></script>
+    <script src="core/js/jquery.validate.js"></script>
+    <script src="core/js/general.js"></script>
+    <script src="core/js/generate.js"></script>
+    <script src="BootStrap/js/bootstrap.js"></script>
+    <!-- End of Script -->
+    
+</div>
+ <!-- End of Container -->
+ 
+</body>
+ <!-- End of Body -->
+</html>
+<!-- End of HTML -->
