@@ -2,7 +2,7 @@
 <div class="row">
 <div class="well well-transparent p-justify" >
 <h2><u>Introduction</u></h2>
-<p>'.FrameWorkName.' is a PHP Application which is developed in the motivation to reduce the working % of person who wants to develop a basic CRUD based PHP Application automatically using evergreen packages like PHP ActiveRecords for database orientation, Design-wise through Bootstrap & Server & Client validations through PHP Simple HTML DOM Parser & JQuery Validation.</p>
+<p>KMF-AppGen is a PHP Application which is developed in the motivation to reduce the working % of person who wants to develop a basic CRUD based PHP Application automatically using evergreen packages like PHP ActiveRecords for database orientation, Design-wise through Bootstrap & Server & Client validations through PHP Simple HTML DOM Parser & JQuery Validation.</p>
 <hr/>
 <h2><u>Requirements</u></h2>
 <ol>
